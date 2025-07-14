@@ -1,0 +1,207 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  color: white;
+  font-family: 'Orbitron', sans-serif;
+}
+
+
+.Home-main-title {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600; /* Orbitron SemiBold */
+  font-size: 5rem;
+  margin: 40px 0;
+}
+.Home-blue-text {
+  color: #00CFFF; /* Neon Blue */
+}
+
+.Home-pink-text {
+  color: #FF2EC6; /* Neon Pink */
+}
+
+
+.Home-section {
+  padding: 20px 40px;
+}
+
+.Home-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+
+.Home-bet-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.Home-grid-1 {
+  grid-template-columns: 1fr;
+}
+
+.Home-grid-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.Home-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.Home-grid-4,
+.Home-grid-5,
+.Home-grid-6 {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+
+.Home-bet-card {
+  background-color: #151515;
+  padding: 20px;
+  border-radius: 12px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
+.Home-bet-card-blue {
+  border: 1px solid #00CFFF;
+}
+
+.Home-bet-card-blue:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px #00CFFF;
+}
+
+
+.Home-bet-card-pink {
+  border: 1px solid #FF2EC6;
+}
+
+.Home-bet-card-pink:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 10px #FF2EC6;
+}
+
+.Home-bet-amount {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.Home-bet-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+
+}
+.Home-bet-description{ 
+  font-size: 1.2 rem;
+  font-weight:bold;
+
+}
+.Home-bet-card-blue .Home-bet-title{
+  color: #FF2EC6;
+}
+
+
+.Home-bet-card-blue .Home-bet-description{
+  color: #FF2EC6;
+}
+
+.Home-bet-card-pink .Home-bet-description{
+  color: #00CFFF;
+}
+
+.Home-bet-card-pink .Home-bet-title{
+  color: #00CFFF;
+}
+
+.Home-bet-card-blue .Home-bet-amount{
+  color: #00CFFF;
+}
+
+.Home-bet-card-pink .Home-bet-amount{
+  color: #FF2EC6;
+}
+
+.Home-bet-to-win {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+
+.Home-bet-card-blue .Home-bet-to-win {
+  color: #FF2EC6;
+}
+
+.Home-bet-card-pink .Home-bet-to-win {
+  color: #00CFFF;
+}
+
+.Home-bet-question {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: White;
+}
+
+
+.Home-no-data {
+  background-color: #151515;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  color: #aaa;
+  font-style: italic;
+}
+
+
+.Home-chat-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #1a1a1a;
+  color: #FF2EC6;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 5px #00CFFF;
+}
+
+.Home-chat-button:hover {
+  background-color: #00CFFF;
+  color: black;
+  box-shadow: 0 0 10px #FF2EC6;
+}
+
+
+.Home-top-section {
+  display: flex;
+  gap: 20px;
+  padding: 20px 40px;
+}
+
+.Home-left-panel {
+  flex: 2;
+  background-color: #111;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+
+.Home-right-panel {
+  flex: 1;
+  background-color: #111;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+
+.Home-bottom-section {
+  margin-top: 40px;
+  padding: 20px 40px;
+}
+

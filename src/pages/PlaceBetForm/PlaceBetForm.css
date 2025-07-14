@@ -1,0 +1,124 @@
+
+.ModalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ModalContent {
+  background: #1b1b1b;
+  border-radius: 24px;
+  padding: 2.5rem;
+  width: 90%;
+  max-width: 480px;
+  box-shadow: 0 0 40px rgba(0, 255, 255, 0.2);
+  position: relative;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  animation: fadeIn 0.25s ease-out;
+}
+
+/* Annimation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+
+.CloseButton {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  background: none;
+  border: none;
+  font-size: 1.75rem;
+  color: #FF2EC6;
+  cursor: pointer;
+}
+
+
+.ModalContent h3 {
+  font-size: 1.5rem;
+  text-align: center;
+  color: white;
+}
+
+
+input[type="number"] {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: 'Orbitron', sans-serif;
+  color: white;
+  background-color: #1e1e1e;
+  border: 2px solid #00CFFF;
+  border-radius: 16px;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  text-align: center;
+}
+
+input[type="number"]:focus {
+  border-color: #FF2EC6;
+  box-shadow: 0 0 15px rgba(255, 46, 198, 0.4);
+}
+
+input[type="number"]::placeholder {
+  color: #888;
+}
+
+.ConfirmBet {
+  padding: 0.6rem 1.2rem;
+  background-color: #00CFFF;
+  color: #1b1b1b;
+  font-size: 1rem;
+  font-family: 'Orbitron', sans-serif;
+  font-weight: bold;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 16px rgba(0, 255, 255, 0.3);
+  margin-top: 1rem;
+  width: fit-content;
+  align-self: center;
+}
+
+.ConfirmBet:hover {
+  background-color: #00b3e6;
+  transform: scale(1.03);
+}
+
+
+
+.ConfirmBet:active {
+  transform: scale(0.98);
+}
+
+.BetMatchResult {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background-color: #1a1a1a;
+  border: 1px solid #4caf50;
+  border-radius: 8px;
+  color: #fff;
+}
+
+
+
+
+
+
+
+

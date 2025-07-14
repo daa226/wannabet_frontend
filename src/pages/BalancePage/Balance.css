@@ -1,0 +1,106 @@
+.Balance-container {
+    background-color:  #000000;
+    color: #fff;
+    min-height: 100vh;
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  .Balance-main {
+    padding: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .Balance-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px; 
+    font-size: 3.5rem;
+    margin-bottom: 50px;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 600;
+  }
+  .Balance-Pink-Title{
+    color: #FF2EC6;
+  }
+  .Balance-Blue-Title{
+    color: #00CFFF;
+  }
+
+
+
+  
+  .Balance-card {
+    background-color: #151515;
+    border: 1px solid #00CFFF;
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+    box-shadow: 0 0 15px rgba(0, 207, 255, 0.2);
+  }
+  
+  .Balance-amount {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #4FFF94;
+    margin: 20px 0;
+  }
+  
+  .Balance-card button {
+    background-color: #4FFF94;
+    color: black;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .Balance-card button:hover {
+    background-color: #33cc70;
+  }
+  
+  .Balance-summary {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+  
+  .Balance-box {
+    flex: 1;
+    background-color: #1a1a1a;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid #444;
+  }
+  
+  .Balance-box h3 {
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+  }
+  
+  .Balance-box p {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .Balance-box.win {
+    border-color: #4FFF94;
+    color: #4FFF94;
+  }
+  
+  .Balance-box.loss {
+    border-color:red;
+    color: red;
+  }
+  .Balance-logo {
+    width: 50px;
+    height: 50px;
+    margin-left: 10px;
+  }
+ 
+ 

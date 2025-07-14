@@ -1,0 +1,114 @@
+/* ChatPage.css */
+
+body {
+    background-color: #000;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .chat-container {
+    display: flex;
+    height: 90vh;
+    background-color: #000;
+  }
+  
+  .chat-sidebar {
+    width: 25%;
+    background-color: #111;
+    padding: 20px;
+    overflow-y: auto;
+    border-right: 1px solid #333;
+  }
+  
+  .chat-title {
+    font-size: 1.5rem;
+    color: #00CFFF;
+    margin-bottom: 1rem;
+    font-weight: bold;
+  }
+  
+  .chat-conversation {
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.2s;
+    color: white;
+  }
+  
+  .chat-conversation:hover {
+    background-color: #1a1a1a;
+  }
+  
+  .chat-conversation.active {
+    background-color: #151515;
+    border: 1px solid #00CFFF;
+    color: #FF2EC6;
+  }
+  
+  .chat-main {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+  }
+  
+  .chat-header {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #FF2EC6;
+    border-bottom: 1px solid #333;
+    padding-bottom: 12px;
+    margin-bottom: 16px;
+  }
+  
+  .chat-messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .chat-message .chat-sender {
+    font-weight: bold;
+    color: #00CFFF;
+  }
+  
+  .chat-input-area {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .chat-input {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #333;
+    background-color: #111;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  .chat-input::placeholder {
+    color: #666;
+  }
+  
+  .chat-send-button {
+    background-color: #00CFFF;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .chat-send-button:hover {
+    background-color: #FF2EC6;
+    color: white;
+  }
+  

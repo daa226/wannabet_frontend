@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.57416edb.css",
+    "main.js": "/static/js/main.f80f8ae0.js",
+    "static/media/Wannabetlogologin.png": "/static/media/Wannabetlogologin.fd885514a9f44ec2ecdf.png",
+    "static/media/Wannabetlogoregister.png": "/static/media/Wannabetlogoregister.fd885514a9f44ec2ecdf.png",
+    "index.html": "/index.html",
+    "main.57416edb.css.map": "/static/css/main.57416edb.css.map",
+    "main.f80f8ae0.js.map": "/static/js/main.f80f8ae0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.57416edb.css",
+    "static/js/main.f80f8ae0.js"
+  ]
+}

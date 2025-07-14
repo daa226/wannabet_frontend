@@ -1,0 +1,153 @@
+.PlaceBet-container {
+  background-color: #000;
+  color: white;
+  min-height: 100vh;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.PlaceBet-main {
+  padding: 40px;
+  margin: 0 auto;
+}
+
+.PlaceBet-title {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 40px;
+}
+
+.PlaceBet-create-button {
+  background-color: #FF2EC6;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 30px;
+}
+
+.PlaceBet-create-button:hover {
+  background-color: #c71a9b;
+}
+
+.PlaceBet-form {
+  background-color: #151515;
+  padding: 25px;
+  border: 1px solid #00CFFF;
+  border-radius: 16px;
+  margin-bottom: 40px;
+  box-shadow: 0 0 12px #FF2EC6;
+}
+
+.PlaceBet-form label {
+  display: block;
+  margin: 15px 0;
+  font-size: 1.1rem;
+}
+
+.PlaceBet-form textarea,
+.PlaceBet-form input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  margin-top: 6px;
+  background-color: #222;
+  color: white;
+}
+
+.PlaceBet-form button {
+  background-color: #00CFFF;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.PlaceBet-toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.PlaceBet-section {
+  margin-top: 40px;
+}
+
+.PlaceBet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.PlaceBet-card {
+  background-color: #151515;
+  padding: 20px;
+  border-radius: 14px;
+  transition: transform 0.2s ease, box-shadow 0.2s;
+}
+
+
+.PlaceBet-card-blue {
+  border: 1px solid #00CFFF;
+}
+
+.PlaceBet-card-blue:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px #00CFFF;
+}
+
+
+.PlaceBet-card-pink {
+  border: 1px solid #FF2EC6;
+}
+
+.PlaceBet-card-pink:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px #FF2EC6;
+}
+
+.PlaceBet-question {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+
+.PlaceBet-card-blue .PlaceBet-question {
+  color: white;
+}
+
+.PlaceBet-card-pink .PlaceBet-question {
+  color: white;
+}
+
+.PlaceBet-group {
+  font-size: 0.95rem;
+}
+
+
+.PlaceBet-card-blue .PlaceBet-group {
+  color: #FF2EC6;
+}
+
+.PlaceBet-card-pink .PlaceBet-group {
+  color: #00CFFF;
+}
+
+.PlaceBet-Challenge-title{
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.PlaceBet-card-pink .PlaceBet-Challenge-title {
+  color: #00CFFF;
+}
+
+.PlaceBet-card-blue .PlaceBet-Challenge-title {
+  color: #FF2EC6;
+}

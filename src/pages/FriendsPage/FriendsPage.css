@@ -1,0 +1,28 @@
+
+.friends-page-container {
+    background-color: #000000;
+    color: white;
+    padding: 40px;
+    min-height: 100vh;
+}
+
+.friends-page-container h1,
+.friends-page-container h2 {
+    color: #00CFFF; 
+    margin-bottom: 20px;
+}
+
+.friends-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 40px;
+}
+
+.friends-list li {
+    background-color: #151515;
+    border: 1px solid #00CFFF;
+    padding: 12px 20px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    font-size: 1rem;
+}

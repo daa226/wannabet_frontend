@@ -1,0 +1,91 @@
+/* Leaderboard.css */
+
+body {
+    background-color: #000;
+    color: white;
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .leaderboard-container {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    background-color: #000;
+    color: white;
+  }
+  
+  
+  .leaderboard-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #00CFFF;
+    margin-bottom: 40px;
+  }
+  
+  .leaderboard-header,
+.leaderboard-row {
+  display: grid;
+  grid-template-columns: 50px 1fr 120px 100px 120px 80px;
+  gap: 16px;
+  padding: 12px 20px;
+  border-bottom: 1px solid #333;
+  align-items: center;
+  text-align: center; /* default all to center */
+}
+
+.leaderboard-header span:nth-child(2),
+.leaderboard-row span:nth-child(2) {
+  text-align: left;
+}
+.leaderboard-header span:nth-child(4),
+.leaderboard-header span:nth-child(5),
+.leaderboard-header span:nth-child(6),
+.leaderboard-row span:nth-child(4),
+.leaderboard-row span:nth-child(5),
+.leaderboard-row span:nth-child(6) {
+  text-align: right;
+}
+
+  .leaderboard-header {
+    font-weight: bold;
+    color: #FF2EC6;
+    background-color: #111;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .leaderboard-row:nth-child(even) {
+    background-color: #111;
+  }
+  
+  .leaderboard-row:hover {
+    background-color: #1a1a1a;
+    box-shadow: 0 0 10px #00CFFF;
+  }
+  
+  .username {
+    color: #FF2EC6;
+    font-weight: bold;
+  }
+  
+  .winnings {
+    color: #00CFFF;
+  }
+  
+  .your-rank {
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #151515;
+    border: 1px solid #00CFFF;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    color: #FF2EC6;
+    font-weight: bold;
+    font-size: 1.1rem;
+    gap: 16px;
+  }
+  

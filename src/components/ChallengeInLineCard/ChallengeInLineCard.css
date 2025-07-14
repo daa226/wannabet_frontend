@@ -1,0 +1,58 @@
+.challenge-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+  }
+  
+  .challenge-card {
+    background-color: #111;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 1rem;
+    color: white;
+  }
+  
+
+  .challenge-card-description {
+    font-size: 1rem;
+    color: #00CFFF;
+    margin-bottom: 1rem;
+  }
+
+  .challenge-card-title{
+    margin-bottom: 0.5rem;
+    color: #FF2EC6;
+    font-size: 1.5rem;
+
+  }
+  
+  .challenge-end {
+    font-size: 0.9rem;
+    color:white;
+  }
+  
+  .challenge-options {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .challenge-option-button {
+    padding: 0.5rem 1rem;
+    background-color: #00CFFF;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .challenge-option-button:hover {
+    background-color: #FF2EC6;
+  }
+  
+  .inline-bet-form {
+    margin-top: 1rem;
+  }
+  

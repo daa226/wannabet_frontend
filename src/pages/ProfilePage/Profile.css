@@ -1,0 +1,95 @@
+.Profile-container {
+    background-color: #000000;
+    color: white;
+    min-height: 100vh;
+    font-family: 'Orbitron', sans-serif;
+  }
+  
+  .Profile-main {
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .Profile-title {
+    text-align: center;
+    font-size: 4rem;
+    margin-bottom: 40px;
+  }
+  
+  .Profile-card {
+    background-color: #151515;
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid #00CFFF;
+    box-shadow: 0 0 10px #FF2EC6;
+  }
+  
+  .Profile-username {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #00CFFF;
+  }
+  
+  .Profile-card p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+  }
+  
+  .Profile-card strong {
+    color: #FF2EC6;
+  }
+  .Profile-button button {
+    background-color: #00CFFF;
+    color: black;
+    font-weight: bold;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .Profile-picture-container {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 1rem;
+  }
+  
+  .Profile-picture {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #00ccff;
+  }
+  
+  .Profile-picture-placeholder {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #ddd;
+    font-size: 3rem;
+    color: #888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .Profile-upload-button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: #00ccff;
+    color: white;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 28px;
+    cursor: pointer;
+  }
+  
