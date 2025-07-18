@@ -34,37 +34,53 @@ function LoginForm() {
     e.preventDefault();
     try {
       setMessage('Logging in...');
-
+  
       const res = await fetch(`${API_BASE_URL}/api/auth/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(form),
         credentials: 'include',
       });
-
-      const data = await res.json();
-
-      if (res.ok) {
-        setMessage('Login successful!');
-
-        if (data.user && data.user.user_id) {
-          localStorage.setItem('userId', data.user.user_id);
-        }
-
-        setTimeout(async () => {
-          await refreshUser();
-          navigate('/Home');
-        }, 500);
-      } else {
-        setMessage(data.message || 'Login failed.');
-        setWasSessionExpired(false); 
+  
+      // Get raw response for debugging
+      const raw = await res.text();
+      console.log("Login response raw:", raw);
+  
+      let data;
+      try {
+        data = JSON.parse(raw); // try parsing as JSON
+      } catch (parseError) {
+        console.error("LoginForm.js | handleSumbit - Failed to parse JSON response:", parseError);
+        throw new Error("LoginForm.js | handleSumbit - Server returned a non-JSON response");
       }
+  
+      // Check for HTTP error
+      if (!res.ok) {
+        console.warn("LoginForm.js | handleSumbit - Login failed:", data.message || res.statusText);
+        setMessage(data.message || 'Login failed.');
+        setWasSessionExpired(false);
+        return;
+      }
+  
+      // Success!
+      setMessage('Login successful!');
+      if (data.user && data.user.user_id) {
+        localStorage.setItem('userId', data.user.user_id);
+      }
+  
+      setTimeout(async () => {
+        await refreshUser();
+        navigate('/Home');
+      }, 500);
+  
     } catch (err) {
-      console.error("LoginForm.js | handleSubmit -" ,err);
+      console.error("LoginForm.js | handleSubmit -", err);
       setMessage('Server error. Please try again later.');
-      setWasSessionExpired(false); 
+      setWasSessionExpired(false);
     }
   };
+  
+  
 
   return (
     <div className="login-background">

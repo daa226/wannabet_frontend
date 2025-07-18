@@ -19,6 +19,7 @@ import SocketManager from "./components/SocketManager";
 import useNotificationStore from "./store/notificationStore";
 import NotificationBanner from "./components/NotificationBanner/NotificationBanner";
 import GroupDetailsPopup from "./components/GroupDetailsPopup/GroupDetailsPopup";
+import UserProfile from "./components/UserProfile/UserProfile";
 
 
 function SessionExpirationHandler() {
@@ -115,6 +116,11 @@ function App() {
         <Route path= "/group/:id" element ={
           <ProtectedRoute><GroupDetailsPopup/></ProtectedRoute>
         }/>
+
+        <Route path = "/Profile/:id" element = {
+          <ProtectedRoute><UserProfile/></ProtectedRoute>
+        }/>
+
 
         {/* Default route */}
 

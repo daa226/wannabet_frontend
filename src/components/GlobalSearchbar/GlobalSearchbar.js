@@ -51,7 +51,7 @@ const GlobalSearchBar = () => {
   }, [query]);
 
   const handleNavigate = (type, id) => {
-    if (type === 'user') navigate(`/Friend`);
+    if (type === 'user') navigate(`/profile/${id}`);
     else if (type === 'bet') navigate(`/Challenge/${id}`);
     else if (type === 'group') navigate(`/group/${id}`);
     setShowDropdown(false);
