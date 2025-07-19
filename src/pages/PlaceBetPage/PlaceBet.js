@@ -7,7 +7,7 @@ import { useNavigate } from "react-router-dom";
 export default function PlaceBet() {
   const navigate = useNavigate();
   const [showForm, setShowForm] = useState(false);
-  API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
+  const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
   const [userChallenges, setUserChallenges] = useState([]);
   const [formData, setFormData] = useState({
     description: "",
